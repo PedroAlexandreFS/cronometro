@@ -1,0 +1,55 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+header{
+    text-align: center;
+    padding: 100px;
+}
+h2{
+    padding:10px;
+}
+
+main{
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.botao{
+    width:auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+button{
+    margin: 10px;
+    font-size: 22px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    padding: 28px;
+}
+
+#Start{
+    background-color: #008000;
+}
+
+#Stop{
+    background-color: #ff0000;
+}
+
+#restart{
+    background-color: #00f;
+}
