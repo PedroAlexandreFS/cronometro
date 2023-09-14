@@ -37,6 +37,7 @@ function restart() {
     clearInterval(interval);
     sec = 0;
     min = 0;
+    hr = 0;
     document.getElementById('numeros').innerHTML ='00:00:00';
 }
 
