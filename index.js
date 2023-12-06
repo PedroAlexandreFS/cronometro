@@ -2,10 +2,12 @@ var sec = 0;
 var min = 0;
 var hr = 0;
 var interval;
+var St = document.getElementById('Start');
 
 function startTempo() {
-   interval = setInterval(time,1000)
-}
+    interval = setInterval(time, 1000)
+    St.style.display = 'none'
+};
 
 function time() {
     sec++
@@ -18,7 +20,7 @@ function time() {
         hr++
     }
     document.getElementById('numeros').innerHTML =twoZero(hr) + ':' +twoZero(min) + ':' + twoZero(sec);
-}
+};
 
 function twoZero(digit) {
     if (digit < 10) {
@@ -26,18 +28,19 @@ function twoZero(digit) {
     } else {
         return (digit);
     }
-}
+};
 
 
 function stopTempo() {
     clearInterval(interval)
-}
+};
 
 function restart() {
     clearInterval(interval);
     sec = 0;
     min = 0;
     hr = 0;
-    document.getElementById('numeros').innerHTML ='00:00:00';
-}
+    document.getElementById('numeros').innerHTML = '00:00:00';
+    St.style.display = 'flex';
+};
 
